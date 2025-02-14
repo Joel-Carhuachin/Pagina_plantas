@@ -65,3 +65,120 @@ html {
     color: var(--blanco);
     font-size: 15px;
 }
+
+.seccion{
+    display: flex;
+    column-gap: 10px;
+}
+/*Style contacto*/
+
+    /* Contenedor principal */
+    .container {
+        display: flex;
+        width: 100%;
+        background-color: #f2d7b6;
+        overflow: hidden;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+    }
+
+    /* Sección de imagen */
+    .image-section {
+        flex: 1;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Sección del formulario */
+    .section{
+        flex: 1;
+        background-color: var(--rosaClaro);
+    }
+    .form-section {
+        flex: 1;
+        background-color: var(--verde);
+        padding: 30px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        margin-top: 3rem;
+        margin-left: 20rem;
+        margin-right: 20rem;
+        margin-bottom: 15rem;
+    }
+
+    /* Título */
+    .form-section h2 {
+        font-style: italic;
+        font-size: x-large;
+    }
+
+    /* Estilos del formulario */
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    label {
+        font-style: italic;
+        margin-top: 10px;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        color: #fff;
+        padding: 5px;
+        outline: none;
+    }
+
+    button {
+        margin-top: 15px;
+        background-color: #e58a5f;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #d97342;
+    }
+
+    /* Información de contacto */
+    .contact-info {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .contact-info img {
+        width: 20px;
+        vertical-align: middle;
+        margin-right: 1rem;
+    }
+
+    .contact-info a {
+        color: var(--plomo);
+        text-decoration: none;        
+    }
+
+    .contact-info a:hover {
+        text-decoration: none; 
+    }
+    
+    .info-contacto{
+        color: var(--plomo);
+        font-size: x-large;
+        font-style: italic;
+    }
+
+/*Fin del style contacto*/
