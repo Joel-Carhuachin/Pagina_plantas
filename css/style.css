@@ -1,0 +1,67 @@
+:root {
+    --verde: #767643;
+    --rosaOscuro: #efb681;
+    --rosaClaro: #f2d9bb;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --plomo: #231f20;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.publicidad--fondo {
+    background-color: var(--verde);
+    padding: 0.3rem 0;
+}
+
+.publicidad--texto {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 1rem;
+}
+
+/*NAVEGACION*/
+.navegacion {
+    background-color: var(--rosaOscuro);
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.navegacion--enlace{
+    color: var(--negro);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+/*Principal*/
+.fondo{
+    /*background-image: url(../img/fondo_cactus.avif);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    position: relative;
+}
+.principal{
+    background-color: var(--rosaClaro);
+    padding: 28rem ;
+}
+.principal--fondo{
+    background-color: var(--plomo);
+    padding: 0 auto; 
+    border-radius: 2rem;
+}
+.principal--text{
+    text-align: center;
+    color: var(--blanco);
+    font-size: 15px;
+}
