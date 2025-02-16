@@ -1,0 +1,10 @@
+.publicidad--fondo {
+    background-color: var(--verde);
+    padding: 0.3rem 0;
+}
+
+.publicidad--texto {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 1rem;
+}

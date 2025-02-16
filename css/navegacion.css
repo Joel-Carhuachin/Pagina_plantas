@@ -1,0 +1,13 @@
+/*NAVEGACION*/
+.navegacion {
+    background-color: var(--rosaOscuro);
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.navegacion--enlace{
+    color: var(--negro);
+    font-size: 1.5rem;
+    text-decoration: none;
+}

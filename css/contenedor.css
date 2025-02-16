@@ -1,0 +1,25 @@
+/*Principal*/
+.fondo--principal{
+    background-color: var(--rosaClaro);
+}
+.principal{
+    background-color: var(--rosaClaro);
+    background-image: url(../img/cactus.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: 60rem;
+}
+.principal--fondo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80rem;
+}
+.principal--text{
+    background-color: var(--plomo);
+    border-radius: 5rem;
+    padding: 4rem;
+    color: var(--blanco);
+    font-size: 15px;
+}
