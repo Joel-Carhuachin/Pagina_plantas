@@ -1,66 +1,67 @@
 /*NAVEGACION*/
-
-/* llamado al archivo style.css */
-@import url("style.css");
-
-/* Estilos generales del menú */
 .navegacion {
     background-color: var(--rosaOscuro);
     padding: 3rem 0;
     display: flex;
+    justify-content: center;
     gap: 2rem;
-    justify-content: center;
-    font-style: italic;
-    
 }
-
-/* Estilos de los enlaces */
-.navegacion--enlace {
+.navegacion--enlace{
     color: var(--negro);
-    text-decoration: none;
-    padding: 10px 15px;
     font-size: 1.5rem;
-    position: relative;
     text-decoration: none;
-    text-align: center;
-    
 }
 
-/* Contenedor del menú desplegable */
-.dropdown {
+/*navegacion de menus*/
+
+.navegacion ul{
+    list-style: none;
+}
+
+.navegacion ul li{
     position: relative;
 }
 
-/* Menú desplegable en pantalla completa */
-.dropdown-content {
-    display: none;
-    position: fixed;
-    top: 13rem;
-    left: 0;
-    width: 100vw; /* Ocupa todo el ancho de la pantalla */
-    height: 30vh; /* Ocupa toda la altura de la pantalla */
-    background-color: var(--rosaClaro); /* Fondo semitransparente */
-    z-index: 99; /* Para que los elementos se pongas sobre todo*/
-    justify-content: center;
-}
-
-
-/* Estilos de los enlaces dentro del menú desplegable */
-.dropdown-content a {
+/*Enlaces eh imagenes*/
+.navegacion ul li a{
     display: block;
+    text-decoration: none;
     color: var(--negro);
+}
+
+.navegacion ul li div{
+    text-align: center;
+}
+
+/*Submenus */
+.navegacion--submenus{
+    position: absolute;
+    top: 90%;
+    left: 0;
+    display: none;/*Ocultamos el submenu*/
+    justify-content: space-around;
+    width: 20rem;
+}
+.nav--mag{
+    position: relative;
+}
+.nav--mag:hover .navegacion--submenus {
+    display: flex;
+}
+
+.navegacion--submenus li {
+    width: 100%;
+}
+.navegacion--submenus a {
+    display: flex;
+    align-items: center;
     padding: 10px;
-    text-decoration: none;
-    
 }
 
-/* Cambio de color al pasar el mouse */
-.dropdown-content a:hover {
-    background-color: var(--verde);
+.navegacion--submenus img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 10px;
 }
 
-/* Mostrar el menú cuando se pasa el mouse */
-.dropdown:hover .dropdown-content {
-    display: block;
-    
-}
