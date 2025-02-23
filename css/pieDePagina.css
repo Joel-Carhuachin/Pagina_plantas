@@ -2,5 +2,50 @@
 @import url("style.css");
 
 
+.container-footer {
+    display: flex;
+    background-color: var(--verde);
+    flex-direction: row;
+    
+}
 
+.secion-footer{
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+.titulos{
+    font-size: x-large;
+    font-style: italic;
+    color: var(--blanco);
+    text-align: left;
+    padding-left: 30%;
+}
+.secion-footer a{
+    display: block;
+    color: var(--blanco);
+    font-size: 1.5rem;
+    text-decoration: none;
+    justify-content: left;
+    padding-top: 1rem;
+    padding-left: 30%;
+    
+}
+/* seccion 1 */
 
+/* seccion 3 */
+.contact-info {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    padding-left: 30%;
+}
+.contact-info img {
+    width: 30px;
+    gap : 1rem;
+}
+.contact-info a {
+    padding-left: 1rem;
+    text-align: center;
+}
+    
