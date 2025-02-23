@@ -1,0 +1,73 @@
+/*NAVEGACION*/
+.navegacion {
+    background-color: var(--rosaOscuro);
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.navegacion--enlace{
+    color: var(--negro);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/*navegacion de menus*/
+
+.navegacion ul{
+    list-style: none;
+}
+
+.navegacion ul li{
+    position: relative;
+}
+
+/*Enlaces eh imagenes*/
+.navegacion ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.navegacion ul li div{
+    text-align: center;
+}
+
+/*Submenus */
+.navegacion--submenus{
+    position: absolute;
+    top: 90%;
+    left: 0;
+    display: none;/*Ocultamos el submenu*/
+    justify-content: space-around;
+    width: 20rem;
+}
+.nav--mag{
+    position: relative;
+}
+.nav--mag:hover .navegacion--submenus {
+    display: flex;
+}
+
+.navegacion--submenus li {
+    width: 100%;
+}
+.navegacion--submenus a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    transition: background 0.3s;
+}
+
+.navegacion--submenus a:hover {
+    background-color: #555;
+}
+
+.navegacion--submenus img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
