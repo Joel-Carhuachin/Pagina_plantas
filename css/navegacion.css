@@ -1,13 +1,66 @@
 /*NAVEGACION*/
+
+/* llamado al archivo style.css */
+@import url("style.css");
+
+/* Estilos generales del menú */
 .navegacion {
     background-color: var(--rosaOscuro);
     padding: 3rem 0;
     display: flex;
-    justify-content: center;
     gap: 2rem;
+    justify-content: center;
+    font-style: italic;
+    
 }
-.navegacion--enlace{
+
+/* Estilos de los enlaces */
+.navegacion--enlace {
     color: var(--negro);
-    font-size: 1.5rem;
     text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+/* Contenedor del menú desplegable */
+.dropdown {
+    position: relative;
+}
+
+/* Menú desplegable en pantalla completa */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    top: 13rem;
+    left: 0;
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    height: 30vh; /* Ocupa toda la altura de la pantalla */
+    background-color: var(--rosaClaro); /* Fondo semitransparente */
+    z-index: 99; /* Para que los elementos se pongas sobre todo*/
+    justify-content: center;
+}
+
+
+/* Estilos de los enlaces dentro del menú desplegable */
+.dropdown-content a {
+    display: block;
+    color: var(--negro);
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+/* Cambio de color al pasar el mouse */
+.dropdown-content a:hover {
+    background-color: var(--verde);
+}
+
+/* Mostrar el menú cuando se pasa el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+    
 }

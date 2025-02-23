@@ -1,3 +1,6 @@
+/* llamado al archivo style.css */
+@import url("style.css");
+
 .publicidad--fondo {
     background-color: var(--verde);
     padding: 0.3rem 0;

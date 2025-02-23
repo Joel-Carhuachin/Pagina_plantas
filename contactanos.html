@@ -3,18 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/publicidad.css">
+    <link rel="stylesheet" href="css/navegacion.css">
+    <link rel="stylesheet" href="css/contenedor.css">
+    <link rel="stylesheet" href="css/contactos.css">
     <title>Document</title>
 </head>
 <body>
-    <section class="publicidad--fondo">
-        <h3 class="publicidad--texto">Envio a todo el Perú</h3>
-    </section>
+    <!-- Llamar a la publicidad -->
+    <div id="publicidad"></div>
 
-    <nav class="navegacion">
-        <a class="navegacion--enlace" href="#">Inicio</a>
-        <a class="navegacion--enlace" href="">Explora nuestro catalogo</a>
-        <a class="navegacion--enlace" href="contactanos.html">Contáctanos</a>
-    </nav>
+    <!--Llamar a nav-->
+    <div id="nav"></div>
+
+    <!-- codigo de la pagina  -->
+    <div class="container">
+        <!-- imagen -->
+        <div class="image-section">
+            <img src="img/foto_contacto.png" alt="Suculentas">
+        </div>
+
+        <!-- formulario -->
+        <div class="section">
+            <div class="form-section">
+                <h2>Déjanos tus datos</h2>
+                <form>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Nombre">
+
+                    <label for="phone">Celular</label>
+                    <input type="tel" id="phone" placeholder="Celular">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+
+                    <label for="city">Ciudad</label>
+                    <input type="text" id="city" placeholder="Ciudad">
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <p class="info-contacto">
+                    <img src="/img/instagram.png" alt="Instagram">
+                    <a href="https://instagram.com/yenyhuayrahuacho">yenyhuayrahuacho</a>
+                </p>
+                <p class="info-contacto">
+                    <img src="/img/whatsapp.png" alt="Teléfono">
+                    +51 946 153 202
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Llamar al pie de pagina -->
+    <div id="footer"></div>
 </body>
 </html>
