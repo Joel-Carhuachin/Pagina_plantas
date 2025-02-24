@@ -16,10 +16,10 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
-    column-gap: 10rem;
-
+    gap: 7rem;
     width: fit-content; /*ajusta al ancho de la banda*/
     margin: 0 auto; /* Centra en la página */
+    padding-bottom: 7rem;
 }
 .planta--img{
     width: 30rem;
@@ -31,4 +31,21 @@
 }
 .planta--text span{
     display: block;
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
+}
+.boton--1{
+    background-color: var(--colorboton);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5rem;
+    width: 40%;
+    text-align: center;
+    border: none;
 }
