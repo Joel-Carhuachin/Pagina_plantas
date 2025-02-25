@@ -1,0 +1,64 @@
+ /* Llamado al archivo syle.css */
+@import url("style.css");
+
+.contenedor-saberMas{
+    display: flex;
+    background-color: var(--rosaClaro);
+    flex-direction: row;
+}
+.seccion-saberMas{
+    flex: 1;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.seccion-saberMas img {
+    width: 35rem;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.seccion-saberMas h2{
+    text-align: left;
+    margin-left: 10rem;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.seccion-saberMas p {
+    text-align: left;
+    margin-left: 15rem;
+    font-size: medium;
+    font-style: italic;
+}
+.seccion-saberMas ul{
+    text-align: left;
+    margin-left: 13rem;
+    font-size: medium;
+    font-style: italic;
+}
+
+.seccion-saberMas h3{
+    text-align: left;
+    margin-left: 15rem;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.seccion-saberMas button{
+    margin-top: 15px;
+    background-color: var(--rosaBoton);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.seccion-saberMas button:hover {
+    background-color: #d97342;
+}
+
+
